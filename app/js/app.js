@@ -146,5 +146,32 @@ document.addEventListener('DOMContentLoaded', () => {
 	slider()
 
 
+	function featuresTabs () {
+		let tabsParent = document.querySelector('.features-list')
+		let tabsTitles = document.querySelectorAll('.features-list__title')
+		let parentSection = document.querySelector('.features')
+		
+		tabsParent.addEventListener('click', function(e) {
+			console.log(e.target)
+			if (e.target.classList.contains('features-list__title') && !e.target.classList.contains('active')) {
+				parentSection.style.height = parentSection.getBoundingClientRect().height + 'px'
+				setTimeout(function () {
+					parentSection.style.height = ''
+				}, 400)
+				tabsTitles.forEach(item=> {
+					if (item === e.target) {
+						item.parentElement.classList.add('active')
+						item.nextElementSibling.getBoundingClientRect().height
+						item.nextElementSibling.style.height = item.nextElementSibling.getBoundingClientRect().height + 'px'
+						console.log(item.nextElementSibling.getBoundingClientRect())
+					} else {
+						item.parentElement.classList.remove('active')
+						item.nextElementSibling.style.height = ''
+					}
+				})
+			}
+		})
+	}
+	featuresTabs ()
 
 })

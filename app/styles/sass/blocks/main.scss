@@ -191,6 +191,7 @@
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.7);
+    z-index: 20;
 }
 
 .menu-open {
@@ -213,6 +214,7 @@
     justify-content: space-between;
     transform: translateX(100%);
     transition: all 400ms;
+    z-index: 30;
     &__link {
         color: #fff;
         text-transform: uppercase;

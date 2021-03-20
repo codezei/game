@@ -3,6 +3,9 @@
     background-size: cover;
     background-position: top center;
     padding: 100px 0;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
     &__sub-title {
         text-align: left;
 
@@ -34,6 +37,17 @@
             height: 500px;
             margin-left: 25px;
         }
+        @media (max-width: 991px) {
+            height: 400px;
+        }
+        @media (max-width: 575px) {
+            height: 300px;
+            margin-left: 15px;
+        }
+        @media (max-width: 375px) {
+            height: 200px;
+            margin-left: 0px;
+        }
     }
     &__item {
         width: calc(100% - 120px);
@@ -52,6 +66,15 @@
         }
         @media (max-width: 991px) {
             height: 500px;
+        }
+        @media (max-width: 991px) {
+            height: 400px;
+        }
+        @media (max-width: 575px) {
+            height: 300px;
+        }
+        @media (max-width: 375px) {
+            height: 200px;
         }
         img {
             width: 100%;
