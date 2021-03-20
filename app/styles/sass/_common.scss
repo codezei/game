@@ -3,7 +3,23 @@
     color: #fff;
     text-align: center;
     font-family: 'Bebas Neue';
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    @media (max-width: 1199px) {
+        font-size: 23px;
+    }
+    @media (max-width: 991px) {
+        font-size: 22px;
+    }
+    @media (max-width: 767px) {
+        font-size: 21px;
+    }
+    @media (max-width: 575px) {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    @media (max-width: 375px) {
+        font-size: 17px;
+    }
 }
 
 .btn {
@@ -31,4 +47,29 @@
         margin-left: auto;
         margin-right: auto;
     }
+}
+.title {
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Bebas Neue';
+    line-height: 1;
+    margin-bottom: 50px;
+    @media (max-width: 1199px) {
+        font-size: 70px;
+    }
+    @media (max-width: 991px) {
+        font-size: 60px;
+    }
+    @media (max-width: 767px) {
+        font-size: 50px;
+    }
+    @media (max-width: 575px) {
+        font-size: 40px;
+    }
+    @media (max-width: 375px) {
+        font-size: 30px;
+    }
+}
+p {
+    margin-bottom: 10px;
 }
