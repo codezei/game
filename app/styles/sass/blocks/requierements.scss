@@ -1,0 +1,59 @@
+.requirements {
+    background-image: url(../images/dist/requirements-bg.jpg);
+    background-size: contain;
+    background-position: bottom left 70%;
+    background-color: #08090b;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    @media (max-width: 991px) {
+        padding-top: 50px;
+        padding-bottom: 250px;
+        background-position: bottom left 20%;
+        background-size: 500px;
+    }
+    @media (max-width: 575px) {
+        padding-top: 25px;
+        background-size: 400px;
+        background-position: bottom center;
+    }
+    &-table {
+        padding: 0 15px;
+        background-image: url(../images/dist/disquette.svg);
+        background-size: 100% 100%;
+        &__title {
+            color: #ffb548;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 10px;
+
+            @media (max-width: 991px) {
+                font-size: 23px;
+            }
+            @media (max-width: 767px) {
+                font-size: 22px;
+            }
+            @media (max-width: 575px) {
+                font-size: 20px;
+            }
+            @media (max-width: 375px) {
+                font-size: 18px;
+            }
+        }
+        &__row {
+            &:not(:last-child) {
+                border-bottom: 1px solid #979797;
+            }
+        }
+        &__col {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            &:nth-child(2) {
+                border-left: 1px solid #979797;
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+    }
+}

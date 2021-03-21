@@ -12,6 +12,9 @@
     background-position: bottom center;
     padding-bottom: 50px;
     padding-top: 15px;
+    @media (max-width: 575px) {
+        padding-bottom: 25px;
+    }
     &-wrap {
         display: flex;
         flex-direction: column;

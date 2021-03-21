@@ -1,0 +1,102 @@
+.quotes {
+    background-image: url(../images/dist/quotes-bg.jpg);
+    background-size: cover;
+    background-position: top left;
+    padding: 100px 0;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+    @media (max-width: 575px) {
+        padding: 25px 0;
+    }
+    &__sub-title {
+        text-align: left;
+    }
+    &__text {
+        margin-bottom: 50px;
+        @media (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+    &__btn {
+        @media (max-width: 767px) {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.review {
+    max-width: 450px;
+    background-color: rgba(26, 27, 28, 0.9);
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+    @media (max-width: 767px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    &:nth-child(odd) {
+        margin-left: auto;
+    }
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    &__header {
+        display: flex;
+        margin-bottom: 25px;
+    }
+    &__content {
+        margin-bottom: 5px;
+    }
+
+    &__ava {
+        position: relative;
+        padding-right: 10px;
+        margin-right: 20px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            right: 0;
+            bottom: -3px;
+            background: #FFB548;
+            z-index: 1;
+
+        }
+    }
+    &__ava-img {
+        border-radius: 50%;
+        display: block;
+        width: 65px;
+        height: 65px;
+        position: relative;
+        z-index: 2;
+    }
+    &__name {
+        color: #FFB548;
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue';
+    }
+    &__work-place {
+        color: #979797;
+    }
+    &__date {
+        color: #979797;
+    }
+    &__link {
+        color: #979797;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+}
