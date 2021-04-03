@@ -45,6 +45,12 @@
     background: transparent;
     color: #fff;
     text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    &:hover {
+        text-decoration: underline;
+    }
     svg {
         display: block;
         margin-left: auto;

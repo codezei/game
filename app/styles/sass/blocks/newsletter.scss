@@ -15,8 +15,9 @@
         background-position: center right calc(50% + 250px);
     }
     @media (max-width: 575px) {
-        background-size: 100px;
+        background-size: 75px;
         background-position: center left;
+        padding: 25px 0;
     }
     &__sub-title {
         text-align: left;
@@ -25,6 +26,9 @@
     &-form {
         margin-top: 50px;
         display: flex;
+        @media (max-width: 575px) {
+            flex-wrap: wrap;
+        }
         &__input {
             display: block;
             background: transparent;
@@ -43,9 +47,18 @@
             padding: 10px;
             margin-right: 15px;
             flex-basis: 60%;
+            @media (max-width: 575px) {
+                flex-basis: 100%;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
         }
         &__btn {
             flex-basis: 40%;
+            @media (max-width: 575px) {
+                flex-basis: 100%;
+                height: 65px;
+            }
         }
     }
 }

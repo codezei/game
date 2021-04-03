@@ -27,7 +27,20 @@
         align-items: center;
         margin-bottom: 0;
         @media (max-width: 991px) {
-            display: none;
+            &:not(.main-menu--footer) {
+                display: none;
+            }
+            
+        }
+        @media (max-width: 767px) {
+            &--footer{
+                flex-wrap: wrap;
+            }
+        }
+        @media (max-width: 575px) {
+            &--footer{
+                margin-bottom: 15px;
+            }
         }
         &__link {
             color: #fff;
@@ -35,7 +48,12 @@
             padding: 0 10px;
             text-transform: uppercase;
             font-weight: 600;
-
+            @media (max-width: 767px) {
+                &--footer{
+                    padding-bottom: 10px;
+                    display: block;
+                }
+            }
             
             &:hover {
                 color: #fff;
